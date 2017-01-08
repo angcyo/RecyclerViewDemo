@@ -57,15 +57,17 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < 1; i++) {
                     //datas.add(2, "add:" + i);
                     datas.remove(2);
-                    datas.add(2, "new 2");
+//                    datas.add(2, "new 2");
                 }
 //                mAdapter.notifyItemRangeInserted(2, 3);
 //                mAdapter.notifyDataSetChanged();
 //                mAdapter.notifyItemInserted(size);
 //                mAdapter.notifyItemRangeChanged(5, datas.size() - 5);
                 try {
-                    mAdapter.notifyItemRangeChanged(2, 1000);
+//                    mAdapter.notifyItemRangeChanged(2, 1000);
 //                    mAdapter.notifyDataSetChanged();
+
+                    mAdapter.notifyItemRemoved(2);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
